@@ -7,6 +7,8 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
 }
 
 *, *::before, *::after {
@@ -79,10 +81,17 @@ h5 {
     padding-right: 1.5rem;
 }
 
+.nav-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
 .nav-links a, .cta a {
     color: #fff;
+    opacity: 0.85;
     text-transform: capitalize;
-    font-size: 0.85rem;
+    font-size: 1rem;
+    transition: all 300ms ease-in;
 }
 
 .start {
@@ -503,4 +512,51 @@ hr {
 
 .footer-logo h5 {
     color: #fff;
+}
+
+.copyright {
+    display: block;
+    padding: 1rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+.copyright a {
+    color: brown;
+    text-decoration: underline;
+}
+
+/*PRODUCT PAGE*/
+.products {
+    margin: 2rem;
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.products h1 {
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-color: #f3ec78;
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.products a {
+    font-size: 1.75rem;
+    color: #fff;
+    opacity: 0.85;
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
+    transition: all 300ms ease-in-out;
+} 
+
+.products a:hover {
+    text-decoration-thickness: 3px;
+    opacity: 1;
 }
